@@ -5,5 +5,5 @@ public interface Collection<E> {
     boolean isEmpty();
     boolean add(E e);
     boolean remove(int index);
-    boolean get(int index);
+    E get(int index);
 }

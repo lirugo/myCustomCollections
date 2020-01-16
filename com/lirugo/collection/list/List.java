@@ -17,6 +17,6 @@ public interface List<E> extends Collection<E> {
     boolean remove(int index);
 
     @Override
-    boolean get(int index);
+    E get(int index);
 
 }
