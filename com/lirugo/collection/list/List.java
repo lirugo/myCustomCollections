@@ -5,18 +5,18 @@ import com.lirugo.collection.Collection;
 public interface List<E> extends Collection<E> {
 
     @Override
-    default int size() { return 0; }
+    int size();
 
     @Override
-    default boolean isEmpty() { return false; }
+    boolean isEmpty();
 
     @Override
-    default boolean add(E o) { return false; }
+    boolean add(E o);
 
     @Override
-    default boolean remove(int index) { return false; }
+    boolean remove(int index);
 
     @Override
-    default boolean get(int index) { return false; }
+    boolean get(int index);
 
 }
