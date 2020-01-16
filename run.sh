@@ -3,9 +3,9 @@
 echo "Compiling"
 echo "------------"
 
-javac com/lirugo/collections/Main.java -d target/classes/
+javac com/lirugo/Main.java -d target/classes/
 
-java -cp target/classes com.lirugo.collections.Main
+java -cp target/classes com.lirugo.Main
 
 echo "------------"
 echo "Done"
