@@ -7,7 +7,9 @@ class Main {
 
         ArrayList<String> l = new ArrayList<>();
 
+        System.out.println(l.isEmpty());
         l.add("String 1");
+        System.out.println(l.isEmpty());
         l.add("String 2");
         l.add("String 3");
         l.add("String 4");

@@ -18,7 +18,7 @@ public class ArrayList<E> implements List<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return this.size == 0;
     }
 
     @Override
