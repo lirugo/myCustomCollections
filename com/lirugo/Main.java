@@ -1,17 +1,27 @@
 package com.lirugo;
 
 import com.lirugo.collection.list.ArrayList;
-import com.lirugo.collection.list.List;
 
 class Main {
     public static void main(String[] args) {
 
-        List<String> l = new ArrayList<>();
+        ArrayList<String> l = new ArrayList<>();
 
-        System.out.println(l.size());
         l.add("String 1");
-        System.out.println(l.size());
+        l.add("String 2");
+        l.add("String 3");
+        l.add("String 4");
+        l.add("String 5");
+        l.add("String 6");
+        l.add("String 7");
+        l.add("String 7");
+        l.add("String 8");
+        l.add("String 9");
 
         System.out.println(l.get(0));
+
+        System.out.println("______________________________");
+        for(int i=0; i< l.size(); i++)
+            System.out.println(l.get(i));
     }
 }

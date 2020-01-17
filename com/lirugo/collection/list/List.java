@@ -18,5 +18,4 @@ public interface List<E> extends Collection<E> {
 
     @Override
     E get(int index);
-
 }
