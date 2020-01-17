@@ -31,9 +31,18 @@ public class ArrayList<E> implements List<E> {
     }
 
     @Override
-    public boolean remove(int index) {
-        size--;
-        return false;
+    public boolean remove(int removeIndex) {
+        E[] newArray = (E[]) new Object[this.array.length];
+        for(int i = 0, j = 0; i < this.array.length; i++)
+            if(i != removeIndex){
+                newArray[j] = this.array[i];
+                j++;
+            }
+
+        this.size--;
+        this.array = newArray;
+
+        return true;
     }
 
     @Override
